@@ -7,8 +7,7 @@ const storeData = {
   description:
     "คาเฟ่อเมซอน พร้อมให้บริการเครื่องดื่มคุณภาพจากเมล็ดกาแฟคัดสรร บรรยากาศสบาย ๆ เหมาะสำหรับพักผ่อนหรือทำงาน",
   time: "06:00 - 22:00 น.",
-  heroImage:
-    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
+  heroImage: "/store/amazon/a4.jpg",
   section2: {
     type: "menu" as const,
     items: [
@@ -21,10 +20,10 @@ const storeData = {
     ],
   },
   galleryImages: [
-    "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1500099817043-86d46000d58f?w=600&h=450&fit=crop",
+    "/store/amazon/a1.jpg",
+    "/store/amazon/a2.jpg",
+    "/store/amazon/a3.jpg",
+    "/store/amazon/a4.jpg",
   ],
 };
 

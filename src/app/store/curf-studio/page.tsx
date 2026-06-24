@@ -6,8 +6,7 @@ const storeData = {
   description:
     "สตูดิโอพิลาทิสส่วนตัว บรรยากาศอบอุ่น ดูแลทุกการเคลื่อนไหว มีครูพิลาทิสที่ได้รับใบเซอร์และประสบการณ์มากมาย พร้อมอุปกรณ์คุณภาพจากแบรนด์ Elina เปิดให้บริการ 3 สาขา",
   time: "7:00 - 21:00 น.",
-  heroImage:
-    "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop",
+  heroImage: "/store/curf/c2.jpg",
   section2: {
     type: "service" as const,
     items: [
@@ -20,10 +19,10 @@ const storeData = {
     ],
   },
   galleryImages: [
-    "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&h=450&fit=crop",
+    "/store/curf/c1.jpg",
+    "/store/curf/c2.jpg",
+    "/store/curf/c3.jpg",
+    "/store/curf/c4.jpg",
   ],
 };
 

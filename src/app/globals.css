@@ -127,4 +127,10 @@
   html {
     @apply font-sans;
   }
+
+  nav * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }

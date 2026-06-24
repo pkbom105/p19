@@ -3,30 +3,27 @@
 import Image from "next/image";
 
 const items = [
-  { src: "/slide/p19-1.png", alt: "Image 1", label: "Label 1" },
-  { src: "/slide/p19-2.png", alt: "Image 2", label: "Label 2" },
-  { src: "/slide/p19-3.png", alt: "Image 3", label: "Label 3" },
-  { src: "/slide/p19-4.png", alt: "Image 4", label: "Label 4" },
-  { src: "/slide/p19-5.png", alt: "Image 5", label: "Label 5" },
+  { src: "/store/amazon/a3.jpg", alt: "Coffee and Tea", label: "Coffee and Tea" },
+  { src: "/store/velaa/v3.jpg", alt: "Food and Beverage", label: "Food and Beverage" },
+  { src: "/store/chaanin/ch4.jpg", alt: "Service and Massage", label: "Service and Massage" },
+  { src: "/store/beyond/b4.jpg", alt: "Beauty and Salon", label: "Beauty and Salon" },
+  { src: "/store/curf/c3.jpg", alt: "Activities - Pilates", label: "Activities - Pilates" },
 ];
 
 export default function Section2() {
   return (
-    <section
-      className="w-full flex items-center justify-center"
-      style={{ backgroundColor: "#91c73e", height: "800px" }}
-    >
-      <div className="max-w-7xl mx-auto px-4 w-full">
+    <section className="w-full py-16 px-4" style={{ backgroundColor: "#ebeae2" }}>
+      <div className="max-w-6xl mx-auto">
         {/* Title */}
         <h2
-          className="text-white text-center mb-16"
-          style={{ fontSize: "100px", fontWeight: 900 }}
+          className="text-start mb-12 font-black"
+          style={{ fontSize: "90px", color: "#687369", fontFamily: "var(--font-sans)" }}
         >
           Your Neibourhood Mall
         </h2>
 
         {/* 5-column grid */}
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-5 gap-4">
           {items.map((item) => (
             <div key={item.src} className="flex flex-col items-center">
               <div className="relative w-full aspect-[2/3] overflow-hidden rounded-lg">
@@ -38,7 +35,7 @@ export default function Section2() {
                   className="object-cover"
                 />
               </div>
-              <p className="mt-4 text-white text-lg text-center" style={{ fontWeight: 400 }}>
+              <p className="mt-4 text-gray-600 text-lg text-center" style={{ fontWeight: 400 }}>
                 {item.label}
               </p>
             </div>

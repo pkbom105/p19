@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto, Noto_Sans_Thai } from "next/font/google";
+import { League_Spartan, Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const roboto = Roboto({
+const leagueSpartan = League_Spartan({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   variable: "--font-sans",
@@ -30,11 +31,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", roboto.variable, notoSansThai.variable, "font-sans")}
+      className={cn("h-full", "antialiased", leagueSpartan.variable, notoSansThai.variable, "font-sans")}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

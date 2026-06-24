@@ -1,14 +1,13 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/beyond-logo.jpg",
+  logo: "/store/beyond/beyond-logo.jpg",
   title: "Beyond",
   subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
   description:
     "ศูนย์ทำสี ยืด ดัด ครบวงจร มีบริการตัดผมชาย-หญิง พร้อมทีมช่างมืออาชีพ ดูแลเส้นผมให้สวยสุขภาพดี",
   time: "เปิดทุกวัน",
-  heroImage:
-    "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
+  heroImage: "/store/beyond/b1.jpg",
   section2: {
     type: "service" as const,
     items: [
@@ -21,10 +20,10 @@ const storeData = {
     ],
   },
   galleryImages: [
-    "https://images.unsplash.com/photo-1634302081030-6a3e1a6b3b7b?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1596728325488-58c87691e9af?w=600&h=450&fit=crop",
+    "/store/beyond/b1.jpg",
+    "/store/beyond/b2.jpg",
+    "/store/beyond/b3.jpg",
+    "/store/beyond/b4.jpg",
   ],
 };
 

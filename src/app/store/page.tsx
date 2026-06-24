@@ -6,7 +6,7 @@ const stores = [
     name: "Cafe Amazon",
     subtitle: "ร้านกาแฟสัญชาติไทย ครบรส",
     time: "06:00 - 22:00 น.",
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop",
+    image: "/store/amazon/a4.jpg",
     link: "/store/cafeamazon-p19",
   },
   {
@@ -14,7 +14,7 @@ const stores = [
     name: "Li Hua",
     subtitle: "ข้าวหมูแดง บะหมี่หมูแดง สไตล์ฮ่องกง",
     time: "11:00 - 22:00 น.",
-    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&h=400&fit=crop",
+    image: "/store/lihua/l1.jpg",
     link: "/store/lihua",
   },
   {
@@ -22,7 +22,7 @@ const stores = [
     name: "Beyond",
     subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
     time: "เปิดทุกวัน",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=400&fit=crop",
+    image: "/store/beyond/b1.jpg",
     link: "/store/beyond",
   },
   {
@@ -30,7 +30,7 @@ const stores = [
     name: "Velaa",
     subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
     time: "7:00 - 20:00 น.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop",
+    image: "/store/velaa/v1.jpg",
     link: "/store/velaa",
   },
   {
@@ -38,7 +38,7 @@ const stores = [
     name: "Chaanin",
     subtitle: "CHAA-NIN Massage | นวดเพื่อสุขภาพ",
     time: "10:00 - 20:00 น.",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=400&fit=crop",
+    image: "/store/chaanin/ch2.jpg",
     link: "/store/chaanin",
   },
   {
@@ -46,21 +46,21 @@ const stores = [
     name: "Curf Studio",
     subtitle: "Private Pilates | Your Beloved Cosy Wellness Studio",
     time: "7:00 - 21:00 น.",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=400&fit=crop",
+    image: "/store/curf/c2.jpg",
     link: "/store/curf-studio",
   },
 ];
 
 export default function StoreDirectory() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <section className="w-full py-16 px-4">
+    <div className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
+      <section className="w-full py-16 px-4 mt-30">
         <div className="max-w-6xl mx-auto">
           <h1
-            className="text-4xl text-center mb-4 text-gray-800 font-black"
-            style={{ fontFamily: "var(--font-sans)" }}
+            className="text-4xl text-center mb-4 font-black"
+            style={{ fontFamily: "var(--font-sans)", color: "#687369" }}
           >
-            Our Store
+            OUR STORE
           </h1>
           <p className="text-center text-gray-500 mb-12 max-w-xl mx-auto">
             รวมร้านค้าและบริการทั้งหมดใน P19 Avenue

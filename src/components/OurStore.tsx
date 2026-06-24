@@ -4,7 +4,7 @@ const stores = [
     name: "Cafe Amazon",
     subtitle: "ร้านกาแฟสัญชาติไทย ครบรส",
     time: "06:00 - 22:00 น.",
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-B1-Cafe%20Amazon.jpg",
     link: "/store/cafeamazon-p19",
   },
   {
@@ -12,7 +12,7 @@ const stores = [
     name: "Li Hua",
     subtitle: "ข้าวหมูแดง บะหมี่หมูแดง สไตล์ฮ่องกง",
     time: "11:00 - 22:00 น.",
-    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-B2-Lihua.jpg",
     link: "/store/lihua",
   },
   {
@@ -20,7 +20,7 @@ const stores = [
     name: "Beyond",
     subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
     time: "เปิดทุกวัน",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-A1-Beyond.jpg",
     link: "/store/beyond",
   },
   {
@@ -28,7 +28,7 @@ const stores = [
     name: "Velaa",
     subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
     time: "7:00 - 20:00 น.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-A3-Velaa.jpg",
     link: "/store/velaa",
   },
   {
@@ -36,7 +36,7 @@ const stores = [
     name: "Chaanin",
     subtitle: "CHAA-NIN Massage | นวดเพื่อสุขภาพ",
     time: "10:00 - 20:00 น.",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-A4-Chanin.jpg",
     link: "/store/chaanin",
   },
   {
@@ -44,20 +44,20 @@ const stores = [
     name: "Curf Studio",
     subtitle: "Private Pilates | Your Beloved Cosy Wellness Studio",
     time: "7:00 - 21:00 น.",
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=200&h=200&fit=crop",
+    image: "/store/logo-tenant-A5-Curf%20Studio.jpg",
     link: "/store/curf-studio",
   },
 ];
 
 export default function OurStore() {
   return (
-    <section className="w-full py-16 px-4" style={{ backgroundColor: "#4185c5" }}>
+    <section className="w-full py-16 px-4" style={{ backgroundColor: "#ebeae2" }}>
       <div className="max-w-6xl mx-auto">
         <h2
-          className="text-4xl text-center mb-12 text-white"
-          style={{ fontWeight: 900, fontFamily: "var(--font-sans)" }}
+          className="text-4xl text-start mb-12 font-black"
+          style={{ color: "#687369", fontFamily: "var(--font-sans)" }}
         >
-          Our Store
+          OUR STORE
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

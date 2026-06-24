@@ -6,8 +6,7 @@ const storeData = {
   description:
     "VELAA เกิดจากความตั้งใจ อยากให้มื้อเช้าไม่ใช่แค่ \"อิ่ม\" แต่ \"มีความหมาย\" ขนมปังซาวร์โดว์อบใหม่ทุกวัน เพื่อสุขภาพเราใส่ใจทุกจาน เพื่อให้ทุกครั้งที่คุณมาที่นี่ เป็นช่วงเวลาแห่งการพักใจ VELAA—the time we taste",
   time: "7:00 - 20:00 น. เปิดทุกวัน",
-  heroImage:
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+  heroImage: "/store/velaa/v1.jpg",
   section2: {
     type: "menu" as const,
     items: [
@@ -20,10 +19,10 @@ const storeData = {
     ],
   },
   galleryImages: [
-    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=600&h=450&fit=crop",
-    "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=450&fit=crop",
+    "/store/velaa/v1.jpg",
+    "/store/velaa/v2.jpg",
+    "/store/velaa/v3.jpg",
+    "/store/velaa/v1.jpg",
   ],
 };
 
