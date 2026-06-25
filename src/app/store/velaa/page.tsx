@@ -1,6 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
+  logo: "/store/logo-tenant-A3-Velaa.jpg",
   title: "Velaa",
   subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
   description:

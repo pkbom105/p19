@@ -63,13 +63,14 @@ export default function Section4() {
 
   return (
     <>
+    {/* Section 1 -  layout */}
     <section className="w-full" style={{ backgroundColor: "#ffff" }}>
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+      <div className="max-w-6xl mx-auto py-15">
+        <div className="grid grid-cols-1 md:grid-cols-[35%_65%] min-h-[600px]">
           {/* Left - Picture spans full height */}
           <div className="relative w-full h-full min-h-[600px] overflow-hidden">
             <Image
-              src="/image/layout1-p19.png"
+              src="/image/6.png"
               alt="P19 Avenue Facility"
               fill
               sizes="50vw"
@@ -89,7 +90,7 @@ export default function Section4() {
             <div className="space-y-8 w-full">
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-80">
+                <div className="flex items-baseline gap-120">
                   <span className="text-5xl font-black text-gray-700">4000</span>
                   <span className="text-2xl text-gray-500 text-end">sqm.</span>
                 </div>
@@ -97,7 +98,7 @@ export default function Section4() {
 
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-99">
+                <div className="flex items-baseline gap-139">
                   <span className="text-5xl font-black text-gray-700">6</span>
                   <span className="text-2xl text-gray-500">stores</span>
                 </div>
@@ -105,7 +106,7 @@ export default function Section4() {
 
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-76">
+                <div className="flex items-baseline gap-117">
                   <span className="text-5xl font-black text-gray-700">35</span>
                   <span className="text-2xl text-gray-500">Parking Unit</span>
                 </div>
@@ -118,39 +119,39 @@ export default function Section4() {
 
     {/* Section 2 - Reversed layout */}
     <section className="w-full" style={{ backgroundColor: "#ebeae2" }}>
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+      <div className="max-w-6xl mx-auto py-15">
+        <div className="grid grid-cols-1 md:grid-cols-[65%_35%] min-h-[600px]">
           {/* Left - Text spans full width */}
           <div className="flex flex-col px-12 py-16 order-2 md:order-1">
             <h2
               className="font-black mb-12"
               style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
             >
-              LOCATION
+              TRAFFIC
             </h2>
 
             <div className="space-y-8 w-full">
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-16">
-                  <span className="text-5xl font-black text-gray-700">P19 Avenue</span>
-                  <span className="text-2xl text-gray-500">Rama 2</span>
+                <div className="flex items-baseline gap-80">
+                  <span className="text-5xl font-black text-gray-700">20-30K</span>
+                  <span className="text-2xl text-gray-500">Cars Traffic/Day</span>
                 </div>
               </div>
 
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-16">
-                  <span className="text-5xl font-black text-gray-700">Easy Access</span>
-                  <span className="text-2xl text-gray-500">Expressway & BRT</span>
+                <div className="flex items-baseline gap-108">
+                  <span className="text-5xl font-black text-gray-700">10</span>
+                  <span className="text-2xl text-gray-500">Avaliable Units</span>
                 </div>
               </div>
 
               <div>
                 <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-16">
-                  <span className="text-5xl font-black text-gray-700">Community Mall</span>
-                  <span className="text-2xl text-gray-500">Your Neighbourhood</span>
+                <div className="flex items-baseline gap-105">
+                  <span className="text-5xl font-black text-gray-700">35%</span>
+                  <span className="text-2xl text-gray-500">Completion</span>
                 </div>
               </div>
             </div>
@@ -159,7 +160,7 @@ export default function Section4() {
           {/* Right - Picture spans full height */}
           <div className="relative w-full h-full min-h-[600px] overflow-hidden order-1 md:order-2">
             <Image
-              src="/image/layout2-p19.png"
+              src="/image/7.png"
               alt="P19 Avenue Location"
               fill
               sizes="50vw"

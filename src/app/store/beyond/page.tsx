@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/beyond/beyond-logo.jpg",
+  logo: "/store/logo-tenant-A1-Beyond.jpg",
   title: "Beyond",
   subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
   description:

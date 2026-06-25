@@ -22,19 +22,19 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Section 1: Hero with 2 columns */}
-      <section className="w-full py-16 px-4">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <section className="w-full py-16 px-4 mt-20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center">
           {/* Left Column: Info */}
           <div className="space-y-4">
             {store.logo && (
               <img
                 src={store.logo}
                 alt={`${store.title} logo`}
-                className="h-16 w-auto mb-2"
+                className="h-40 w-auto mb-2"
               />
             )}
             <h1
-              className="text-5xl font-black tracking-tighter"
+              className="text-5xl font-black tracking-tighter my-8"
               style={{ fontFamily: "var(--font-sans)", fontWeight: 900 }}
             >
               {store.title}

@@ -23,9 +23,6 @@ export default function Slide() {
 
   return (
     <div className="w-full">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
-      </style>
       {/* Container */}
       <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
         {/* Slides with fade transition */}
@@ -74,7 +71,7 @@ export default function Slide() {
             className="drop-shadow-lg"
             style={{
               fontSize: "100px",
-              fontFamily: "Corinthia, cursive",
+              fontFamily: "var(--font-buffalo)",
               lineHeight: 1,
               color: "#ffc657",
             }}

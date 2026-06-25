@@ -1,6 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
+  logo: "/store/logo-tenant-B2-Lihua.jpg",
   title: "Li Hua",
   subtitle: "ลี่ฮัว - ข้าวหมูแดง บะหมี่หมูแดง สไตล์ฮ่องกง",
   description:

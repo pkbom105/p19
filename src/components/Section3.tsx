@@ -8,7 +8,7 @@ export default function Section3() {
       {/* Full width background image */}
       <div className="relative w-full h-[600px]">
         <Image
-          src="/slide/p19-5.png"
+          src="/image/bb1.png"
           alt="Be Our Next Partner"
           fill
           sizes="100vw"
@@ -30,7 +30,7 @@ export default function Section3() {
             className="text-white/80 max-w-xl"
             style={{ fontSize: "20px", fontFamily: "var(--font-sans)" }}
           >
-            มาร่วมเป็นส่วนหนึ่งของ P19 Avenue — คอมมูนิตี้มอลล์ที่กำลังเติบโตบนถนนพุทธบูชา
+            มาร่วมเป็นส่วนหนึ่งของ P19 Avenue — สนใจพื้นที่ติดต่อ
           </p>
         </div>
       </div>

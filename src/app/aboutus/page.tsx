@@ -16,6 +16,7 @@ export default function AboutUsPage() {
                 fill
                 sizes="(max-width: 768px) 100vw, 30vw"
                 className="object-cover"
+                loading="eager"
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Caf%C3%A9_Amazon_logo.svg/1200px-Caf%C3%A9_Amazon_logo.svg.png",
+  logo: "/store/logo-tenant-B1-Cafe%20Amazon.jpg",
   title: "Cafe Amazon",
   subtitle: "ร้านกาแฟสัญชาติไทย",
   description:

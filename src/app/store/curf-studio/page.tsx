@@ -1,6 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
+  logo: "/store/logo-tenant-A5-Curf%20Studio.jpg",
   title: "Curf Studio",
   subtitle: "Your Beloved Cosy Wellness Studio | Private Pilates",
   description:

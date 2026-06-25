@@ -68,7 +68,7 @@ export default function OurStore() {
               className="flex items-center gap-4 bg-white rounded-2xl p-4 hover:bg-gray-100 transition-colors group"
             >
               {/* Picture */}
-              <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <div className="w-28 h-14 rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src={store.image}
                   alt={store.name}

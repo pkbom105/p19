@@ -1,6 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
+  logo: "/store/logo-tenant-A4-Chanin.jpg",
   title: "Chaanin",
   subtitle: "CHAA-NIN Massage | ชนินทร์ มาสสาจ",
   description:
