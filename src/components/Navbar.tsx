@@ -47,10 +47,10 @@ export default function Navbar() {
             <Image
               src="/image/logo-p19-white.png"
               alt="P19 Logo"
-              width={100}
-              height={35}
-              className="object-contain"
-              style={{ height: 100, width: "auto" }}
+              width={286}
+              height={100}
+              className="object-contain h-[100px] w-auto"
+              priority
             />
           </Link>
           <div className="flex items-center gap-12">
@@ -81,10 +81,9 @@ export default function Navbar() {
           <Image
             src="/image/logo2-p19.png"
             alt="P19 Logo"
-            width={100}
-            height={35}
-            className="object-contain"
-            style={{ height: 100, width: "auto" }}
+            width={286}
+            height={100}
+            className="object-contain h-[100px] w-auto"
           />
         </Link>
         <div className="flex items-center gap-12">

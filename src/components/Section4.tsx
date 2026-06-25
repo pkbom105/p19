@@ -182,36 +182,30 @@ export default function Section4() {
         </h2>
 
         <div className="grid grid-cols-2 gap-4">
-          {(() => {
-            const vibeImages = [
-              { src: "/store/amazon/a1.jpg", alt: "Cafe Amazon", link: "/store/cafeamazon-p19" },
-              { src: "/store/lihua/l2.jpg", alt: "Li Hua", link: "/store/lihua" },
-              { src: "/store/beyond/b4.jpg", alt: "Beyond", link: "/store/beyond" },
-              { src: "/store/velaa/v1.jpg", alt: "Velaa", link: "/store/velaa" },
-              { src: "/store/chaanin/ch2.jpg", alt: "Chaanin", link: "/store/chaanin" },
-              { src: "/store/curf/c4.jpg", alt: "Curf Studio", link: "/store/curf-studio" },
-            ];
-            const shuffled = [...vibeImages].sort(() => Math.random() - 0.5);
-            return shuffled.slice(0, 4).map((img, i) => (
-              <a
-                key={i + "-" + Date.now()}
-                href={img.link}
-                className="relative w-full aspect-[4/3] overflow-hidden rounded-lg group block"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                {/* Badge */}
-                <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
-                  {img.alt}
-                </div>
-              </a>
-            ));
-          })()}
+          {[
+            { src: "/store/amazon/a1.jpg", alt: "Cafe Amazon", link: "/store/cafeamazon-p19" },
+            { src: "/store/lihua/l2.jpg", alt: "Li Hua", link: "/store/lihua" },
+            { src: "/store/beyond/b4.jpg", alt: "Beyond", link: "/store/beyond" },
+            { src: "/store/velaa/v1.jpg", alt: "Velaa", link: "/store/velaa" },
+          ].map((img) => (
+            <a
+              key={img.alt}
+              href={img.link}
+              className="relative w-full aspect-[4/3] overflow-hidden rounded-lg group block"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              {/* Badge */}
+              <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
+                {img.alt}
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>    
