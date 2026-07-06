@@ -47,6 +47,17 @@ export default function AboutUsPage() {
                 <span className="font-bold">อีเมล:</span>{" "}
                 info.p19avenue@gmail.com
               </p>
+              <p>
+                <span className="font-bold">โทรศัพท์:</span>{" "}
+                084 774 8475
+              </p>
+              <div className="pt-4">
+                <img
+                  src="https://qr-official.line.me/gs/M_431fqlea_GW.png?oat_content=qr"
+                  alt="LINE Official QR"
+                  className="w-32 h-32 object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
