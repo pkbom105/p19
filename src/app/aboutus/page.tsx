@@ -51,12 +51,38 @@ export default function AboutUsPage() {
                 <span className="font-bold">โทรศัพท์:</span>{" "}
                 084 774 8475
               </p>
-              <div className="pt-4">
-                <img
-                  src="https://qr-official.line.me/gs/M_431fqlea_GW.png?oat_content=qr"
-                  alt="LINE Official QR"
-                  className="w-32 h-32 object-contain"
-                />
+              <div className="pt-4 space-y-2">
+                <a
+                  href="https://line.me/R/ti/p/@431fqlea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <img
+                    src="https://qr-official.line.me/gs/M_431fqlea_GW.png?oat_content=qr"
+                    alt="LINE Official QR"
+                    className="w-32 h-32 object-contain hover:opacity-80 transition-opacity"
+                  />
+                </a>
+                <p className="text-sm text-gray-500 flex items-center gap-1.5">
+                  <a
+                    href="https://line.me/R/ti/p/@431fqlea"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fa-brands fa-line" style={{ fontSize: "60px", color: "#1dc462" }}></i>
+                  </a>
+                  <span className="font-bold">LINE ID:</span>{" "}
+                  <a
+                    href="https://line.me/R/ti/p/@431fqlea"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                    style={{ fontSize: "18px" }}
+                  >
+                    @431fqlea
+                  </a>
+                </p>
               </div>
             </div>
           </div>
