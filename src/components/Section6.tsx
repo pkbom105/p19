@@ -1,16 +1,43 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.26,
+      delayChildren: 1.0,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
 
 export default function Section6() {
   return (
     <>
       {/* Location section above map */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#ffff" }}>
+      <motion.section
+        className="w-full py-16 px-4"
+        style={{ backgroundColor: "#ffff" }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Column 1 - Title + text + button 50% */}
-            <div>
+            <motion.div variants={itemVariants}>
               <h2
                 className="font-black mb-6"
                 style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
@@ -34,10 +61,13 @@ export default function Section6() {
               >
                 ดูใน Google Maps
               </a>
-            </div>
+            </motion.div>
 
             {/* Column 2- picture 50% */}
-            <div className="relative w-full aspect-[1/1] overflow-hidden rounded-lg">
+            <motion.div
+              className="relative w-full aspect-[1/1] overflow-hidden rounded-lg"
+              variants={itemVariants}
+            >
               <Image
                 src="/image/8.png"
                 alt="P19 Avenue Layout"
@@ -45,12 +75,12 @@ export default function Section6() {
                 sizes="50vw"
                 className="object-cover"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Map google map- max-w-6xl centered */}
+      {/* Map google map - no animation */}
       <section className="w-full py-16 px-4" style={{ backgroundColor: "#ffff" }}>
         <div className="max-w-6xl mx-auto">
           <div className="w-full h-[500px] overflow-hidden rounded-lg">
@@ -69,11 +99,18 @@ export default function Section6() {
       </section>
 
       {/* 2 Column Text below map */}
-      <section className="w-full py-16 px-4" style={{ backgroundColor: "#ffff" }}>
+      <motion.section
+        className="w-full py-16 px-4"
+        style={{ backgroundColor: "#ffff" }}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Column 1 */}
-            <div>
+            <motion.div variants={itemVariants}>
               <h2
                 className="font-thin mb-6"
                 style={{ fontSize: "80px", color: "#687369", fontFamily: "var(--font-sans)", lineHeight: 0.8 }}
@@ -82,10 +119,10 @@ export default function Section6() {
                 AVENUE<br></br>
                 PUTTHABUCHA
               </h2>              
-            </div>
+            </motion.div>
 
             {/* Column 2 */}
-            <div>
+            <motion.div variants={itemVariants}>
               <h5
                 className="font-black mb-6"
                 style={{ fontSize: "30px", color: "#687369", fontFamily: "var(--font-sans)" }}
@@ -127,10 +164,10 @@ export default function Section6() {
                   <p>info.p19avenue@gmail.com</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

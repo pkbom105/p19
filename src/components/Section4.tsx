@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 const stores = [
   {
@@ -63,135 +64,223 @@ export default function Section4() {
 
   return (
     <>
-    {/* Section 1 -  layout */}
+    {/* Section 1 - FACILITY */}
     <section className="w-full" style={{ backgroundColor: "#ffff" }}>
-      <div className="max-w-6xl mx-auto py-15">
-        <div className="grid grid-cols-1 md:grid-cols-[35%_65%] min-h-[600px]">
-          {/* Left - Picture spans full height */}
-          <div className="relative w-full h-full min-h-[600px] overflow-hidden">
+      <div className="max-w-6xl mx-auto py-10 md:py-15">
+        <div className="grid grid-cols-1 md:grid-cols-[35%_65%] min-h-[300px] md:min-h-[600px]">
+          {/* Left - Picture: scale from small to big */}
+          <motion.div
+            className="relative w-full h-full min-h-[250px] md:min-h-[600px] overflow-hidden"
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <Image
               src="/image/6.png"
               alt="P19 Avenue Facility"
               fill
-              sizes="50vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
-          </div>
+          </motion.div>
 
-          {/* Right - Text spans full width */}
-          <div className="flex flex-col px-12 py-16">
-            <h2
-              className="font-black mb-12"
-              style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
+          {/* Right - Text: slide from right */}
+          <motion.div
+            className="flex flex-col px-6 md:px-12 py-8 md:py-16"
+            initial={{ x: 80, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
+            <motion.h2
+              className="font-black mb-6 md:mb-12"
+              style={{ fontSize: "clamp(36px, 8vw, 60px)", color: "#687369", fontFamily: "var(--font-sans)" }}
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               FACILITY
-            </h2>
+            </motion.h2>
 
-            <div className="space-y-8 w-full">
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-120">
-                  <span className="text-5xl font-black text-gray-700">4000</span>
-                  <span className="text-2xl text-gray-500 text-end">sqm.</span>
+            <motion.div
+              className="space-y-6 md:space-y-8 w-full"
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.26, delayChildren: 1.0 } },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-120">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">4000</span>
+                  <span className="text-lg md:text-2xl text-gray-500">sqm.</span>
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-139">
-                  <span className="text-5xl font-black text-gray-700">6</span>
-                  <span className="text-2xl text-gray-500">stores</span>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-139">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">6</span>
+                  <span className="text-lg md:text-2xl text-gray-500">stores</span>
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-117">
-                  <span className="text-5xl font-black text-gray-700">35</span>
-                  <span className="text-2xl text-gray-500">Parking Unit</span>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-117">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">35</span>
+                  <span className="text-lg md:text-2xl text-gray-500">Parking Unit</span>
                 </div>
-              </div>
-            </div>
-          </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
 
-    {/* Section 2 - Reversed layout */}
+    {/* Section 2 - TRAFFIC (Reversed layout) */}
     <section className="w-full" style={{ backgroundColor: "#ebeae2" }}>
-      <div className="max-w-6xl mx-auto py-15">
-        <div className="grid grid-cols-1 md:grid-cols-[65%_35%] min-h-[600px]">
-          {/* Left - Text spans full width */}
-          <div className="flex flex-col px-12 py-16 order-2 md:order-1">
-            <h2
-              className="font-black mb-12"
-              style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
+      <div className="max-w-6xl mx-auto py-10 md:py-15">
+        <div className="grid grid-cols-1 md:grid-cols-[65%_35%] min-h-[300px] md:min-h-[600px]">
+          {/* Left - Text: slide from left */}
+          <motion.div
+            className="flex flex-col px-6 md:px-12 py-8 md:py-16 order-2 md:order-1"
+            initial={{ x: -80, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
+            <motion.h2
+              className="font-black mb-6 md:mb-12"
+              style={{ fontSize: "clamp(36px, 8vw, 60px)", color: "#687369", fontFamily: "var(--font-sans)" }}
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               TRAFFIC
-            </h2>
+            </motion.h2>
 
-            <div className="space-y-8 w-full">
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-80">
-                  <span className="text-5xl font-black text-gray-700">20-30K</span>
-                  <span className="text-2xl text-gray-500">Cars Traffic/Day</span>
+            <motion.div
+              className="space-y-6 md:space-y-8 w-full"
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.26, delayChildren: 1.0 } },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-80">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">20-30K</span>
+                  <span className="text-lg md:text-2xl text-gray-500">Cars Traffic/Day</span>
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-108">
-                  <span className="text-5xl font-black text-gray-700">10</span>
-                  <span className="text-2xl text-gray-500">Avaliable Units</span>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-108">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">10</span>
+                  <span className="text-lg md:text-2xl text-gray-500">Avaliable Units</span>
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
-                <hr className="border-t-2 border-gray-400 mb-4 w-full" />
-                <div className="flex items-baseline gap-105">
-                  <span className="text-5xl font-black text-gray-700">35%</span>
-                  <span className="text-2xl text-gray-500">Completion</span>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" as const } },
+                }}
+              >
+                <hr className="border-t-2 border-gray-400 mb-3 md:mb-4 w-full" />
+                <div className="flex items-baseline justify-between md:justify-start md:gap-105">
+                  <span className="text-3xl md:text-5xl font-black text-gray-700">35%</span>
+                  <span className="text-lg md:text-2xl text-gray-500">Completion</span>
                 </div>
-              </div>
-            </div>
-          </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
-          {/* Right - Picture spans full height */}
-          <div className="relative w-full h-full min-h-[600px] overflow-hidden order-1 md:order-2">
+          {/* Right - Picture: scale from small to big */}
+          <motion.div
+            className="relative w-full h-full min-h-[250px] md:min-h-[600px] overflow-hidden order-1 md:order-2"
+            initial={{ scale: 0.5, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <Image
               src="/image/7.png"
               alt="P19 Avenue Location"
               fill
-              sizes="50vw"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
 
     {/* Section 3 - VIBE 2x2 Picture Grid */}
-    <section className="w-full py-16 px-4" style={{ backgroundColor: "#ffff" }}>
+    <section className="w-full py-10 md:py-16 px-4" style={{ backgroundColor: "#ffff" }}>
       <div className="max-w-6xl mx-auto">
-        <h2
-          className="text-start mb-12 font-black"
-          style={{ fontSize: "90px", color: "#687369", fontFamily: "var(--font-sans)" }}
+        <motion.h2
+          className="text-start mb-6 md:mb-12 font-black"
+          style={{ fontSize: "clamp(40px, 10vw, 90px)", color: "#687369", fontFamily: "var(--font-sans)" }}
+          initial={{ x: -80, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           VIBE
-        </h2>
+        </motion.h2>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3 md:gap-4">
           {[
             { src: "/store/amazon/a1.jpg", alt: "Cafe Amazon", link: "/store/cafeamazon-p19" },
             { src: "/store/lihua/l2.jpg", alt: "Li Hua", link: "/store/lihua" },
             { src: "/store/beyond/b4.jpg", alt: "Beyond", link: "/store/beyond" },
             { src: "/store/velaa/v1.jpg", alt: "Velaa", link: "/store/velaa" },
-          ].map((img) => (
-            <a
+          ].map((img, i) => (
+            <motion.a
               key={img.alt}
               href={img.link}
               className="relative w-full aspect-[4/3] overflow-hidden rounded-lg group block"
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.15 }}
             >
               <Image
                 src={img.src}
@@ -201,10 +290,10 @@ export default function Section4() {
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
               {/* Badge */}
-              <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">
+              <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 bg-black/60 text-white text-xs font-semibold px-2 md:px-3 py-1 rounded-full backdrop-blur-sm">
                 {img.alt}
               </div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>

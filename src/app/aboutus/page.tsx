@@ -32,11 +32,11 @@ export default function AboutUsPage() {
 
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
-                <span className="font-bold">ชื่อบริษัท (ภาษาไทย):</span>{" "}
+                <span className="font-bold">ชื่อบริษัท:</span>{" "}
                 บริษัท เบทเทอร์แลนด์ ดีเวลลอปเมนท์ จำกัด
               </p>
               <p>
-                <span className="font-bold">ชื่อบริษัท (ภาษาอังกฤษ):</span>{" "}
+                <span className="font-bold">Company Name:</span>{" "}
                 BETTERLAND DEVELOPMENT CO., LTD.
               </p>
               <p>
@@ -64,25 +64,6 @@ export default function AboutUsPage() {
                     className="w-32 h-32 object-contain hover:opacity-80 transition-opacity"
                   />
                 </a>
-                <p className="text-sm text-gray-500 flex items-center gap-1.5">
-                  <a
-                    href="https://line.me/R/ti/p/@431fqlea"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fa-brands fa-line" style={{ fontSize: "60px", color: "#06C755" }}></i>
-                  </a>
-                  <span className="font-bold">LINE ID:</span>{" "}
-                  <a
-                    href="https://line.me/R/ti/p/@431fqlea"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                    style={{ fontSize: "18px" }}
-                  >
-                    @431fqlea
-                  </a>
-                </p>
               </div>
             </div>
           </div>

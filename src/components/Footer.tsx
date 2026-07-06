@@ -17,7 +17,7 @@ export default function Footer() {
                 width={120}
                 height={40}
                 className="object-contain mb-4"
-                style={{ width: "auto", height: 60 }}
+                style={{ height: 60, width: "auto" }}
               />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed max-w-md">
@@ -69,9 +69,21 @@ export default function Footer() {
                   href="https://www.facebook.com/p19avenue"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-black transition-colors"
+                  className="flex items-center gap-1.5 hover:text-black transition-colors"
                 >
-                  Facebook: P19 Avenue
+                  <i className="fa-brands fa-facebook-f" style={{ fontSize: "18px", color: "#1877F2" }}></i>
+                  <span>Facebook: P19 Avenue</span>
+                </a>
+              </li>
+              <li className="mt-2">
+                <a
+                  href="https://line.me/R/ti/p/@431fqlea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-black transition-colors"
+                >
+                  <i className="fa-brands fa-line" style={{ fontSize: "20px", color: "#06C755" }}></i>
+                  <span>LINE OA : P19 Avenue @431fqlea </span>
                 </a>
               </li>
             </ul>

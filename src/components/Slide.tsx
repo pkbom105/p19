@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const slides = [
   { src: "/slide/p19-1.png", alt: "Slide 1" },
@@ -51,23 +52,26 @@ export default function Slide() {
           style={{ backgroundImage: "url(/slide/p19-fg2.png)" }}
         />
 
-        {/* Text overlay P19 Avenue */}
+        {/* Text overlay P19 Avenue - animate once on mount from bottom to top */}
         <div className="absolute inset-0 z-10 flex justify-center mt-[150px]">
-          <p
+          <motion.p
             className="text-white drop-shadow-lg"
             style={{
               fontSize: "220px",
               fontFamily: "var(--font-sans)",
               fontWeight: 900,
             }}
+            initial={{ y: 80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
           >
             P19 AVENUE
-          </p>
+          </motion.p>
         </div>
 
-        {/* Text overlay Putthabucha */}
+        {/* Text overlay Putthabucha - animate once on mount from bottom to top */}
         <div className="absolute inset-0 z-30 flex justify-center mt-[400px] ml-[850px]">
-          <p
+          <motion.p
             className="drop-shadow-lg"
             style={{
               fontSize: "100px",
@@ -75,9 +79,12 @@ export default function Slide() {
               lineHeight: 1,
               color: "#ffc657",
             }}
+            initial={{ y: 60, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
           >
             Putthabucha
-          </p>
+          </motion.p>
         </div>
       </div>
     </div>

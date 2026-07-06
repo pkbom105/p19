@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const stores = [
   {
     id: 1,
@@ -49,23 +53,53 @@ const stores = [
   },
 ];
 
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.26,
+      delayChildren: 1.0,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as const },
+  },
+};
+
 export default function OurStore() {
   return (
     <section className="w-full py-16 px-4" style={{ backgroundColor: "#ebeae2" }}>
       <div className="max-w-6xl mx-auto">
-        <h2
+        <motion.h2
           className="text-4xl text-start mb-12 font-black"
           style={{ color: "#687369", fontFamily: "var(--font-sans)" }}
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
           OUR STORE
-        </h2>
+        </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+        >
           {stores.map((store) => (
-            <a
+            <motion.a
               key={store.id}
               href={store.link}
               className="flex items-center gap-6 bg-white rounded-2xl p-6 hover:bg-gray-100 transition-colors group"
+              variants={itemVariants}
             >
               {/* Thumbnail */}
               <div className="w-45 h-38 rounded-xl overflow-hidden flex-shrink-0">
@@ -100,9 +134,9 @@ export default function OurStore() {
                   />
                 </svg>
               </div>
-            </a>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
