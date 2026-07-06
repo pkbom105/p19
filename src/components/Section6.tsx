@@ -35,17 +35,17 @@ export default function Section6() {
         viewport={{ once: true, amount: 0.1 }}
       >
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Column 1 - Title + text + button 50% */}
             <motion.div variants={itemVariants}>
               <h2
-                className="font-black mb-6"
-                style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
+                className="font-black mb-4 md:mb-6"
+                style={{ fontSize: "clamp(36px, 8vw, 60px)", color: "#687369", fontFamily: "var(--font-sans)" }}
               >
                 Location
               </h2>
               <p
-                className="text-gray-700 text-lg leading-relaxed mb-6"
+                className="text-gray-700 text-base md:text-lg leading-relaxed mb-4 md:mb-6"
                 style={{ fontWeight: 300 }}
               >
                 ตั้งอยู่ริมถนนติดซอยพุทธบูชา 19
@@ -56,7 +56,7 @@ export default function Section6() {
                 href="https://maps.google.com/?q=P19+Avenue+Putthabucha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-8 py-3 rounded-full text-white font-semibold text-lg transition-colors"
+                className="inline-block px-6 md:px-8 py-3 rounded-full text-white font-semibold text-base md:text-lg transition-colors"
                 style={{ backgroundColor: "#687369" }}
               >
                 ดูใน Google Maps
@@ -65,14 +65,14 @@ export default function Section6() {
 
             {/* Column 2- picture 50% */}
             <motion.div
-              className="relative w-full aspect-[1/1] overflow-hidden rounded-lg"
+              className="relative w-full aspect-[4/3] md:aspect-[1/1] overflow-hidden rounded-lg"
               variants={itemVariants}
             >
               <Image
                 src="/image/8.png"
                 alt="P19 Avenue Layout"
                 fill
-                sizes="50vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
               />
             </motion.div>
@@ -83,7 +83,7 @@ export default function Section6() {
       {/* Map google map - no animation */}
       <section className="w-full py-16 px-4" style={{ backgroundColor: "#ffff" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="w-full h-[500px] overflow-hidden rounded-lg">
+          <div className="w-full h-[300px] md:h-[500px] overflow-hidden rounded-lg">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.8399277350245!2d100.46672547568922!3d13.667495599238558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a35befaeb6ab%3A0x736f878c5c10cfa6!2sP19%20Avenue%20Putthabucha!5e0!3m2!1sen!2sth!4v1782287699414!5m2!1sen!2sth"
               width="100%"
@@ -108,12 +108,12 @@ export default function Section6() {
         viewport={{ once: true, amount: 0.1 }}
       >
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Column 1 */}
             <motion.div variants={itemVariants}>
               <h2
-                className="font-thin mb-6"
-                style={{ fontSize: "80px", color: "#687369", fontFamily: "var(--font-sans)", lineHeight: 0.8 }}
+                className="font-thin mb-4 md:mb-6"
+                style={{ fontSize: "clamp(44px, 10vw, 80px)", color: "#687369", fontFamily: "var(--font-sans)", lineHeight: 0.85 }}
               >
                 P19<br></br>
                 AVENUE<br></br>
@@ -124,12 +124,12 @@ export default function Section6() {
             {/* Column 2 */}
             <motion.div variants={itemVariants}>
               <h5
-                className="font-black mb-6"
-                style={{ fontSize: "30px", color: "#687369", fontFamily: "var(--font-sans)" }}
+                className="font-black mb-4 md:mb-6"
+                style={{ fontSize: "clamp(24px, 5vw, 30px)", color: "#687369", fontFamily: "var(--font-sans)" }}
               >
                 CONTACT
               </h5>
-              <div className="space-y-6 text-gray-700 text-lg">
+              <div className="space-y-4 md:space-y-6 text-gray-700 text-base md:text-lg">
                 <div className="flex items-start gap-4">
                   <svg
                     className="w-6 h-6 mt-1 shrink-0"
