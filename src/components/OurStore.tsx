@@ -98,11 +98,11 @@ export default function OurStore() {
             <motion.a
               key={store.id}
               href={store.link}
-              className="flex items-center gap-6 bg-white rounded-2xl p-6 hover:bg-gray-100 transition-colors group"
+              className="flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-6 bg-white rounded-2xl p-4 md:p-6 hover:bg-gray-100 transition-colors group"
               variants={itemVariants}
             >
-              {/* Thumbnail */}
-              <div className="w-45 h-38 rounded-xl overflow-hidden flex-shrink-0">
+              {/* Thumbnail - full width on mobile */}
+              <div className="w-full md:w-45 h-48 md:h-38 rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src={store.image}
                   alt={store.name}
@@ -118,7 +118,7 @@ export default function OurStore() {
               </div>
 
               {/* Arrow */}
-              <div className="text-gray-400 group-hover:text-gray-600 transition-colors flex-shrink-0">
+              <div className="text-gray-400 group-hover:text-gray-600 transition-colors flex-shrink-0 self-end md:self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
