@@ -6,7 +6,7 @@ export default function Section1() {
       <div className="max-w-6xl mx-auto">
         <h4
           className="text-center md:text-center"
-          style={{ fontSize: "30px", color: "#687369", fontFamily: "var(--font-sans)", fontWeight: 300, lineHeight: 1.8 }}
+          style={{ fontSize: "30px", color: "#687369", fontFamily: "var(--font-thai)", fontWeight: 300, lineHeight: 1.8 }}
         >
           โครงการ P19 Avenue ตั้งอยู่บนถนนพุทธบูชาติดซอย19
           <br />

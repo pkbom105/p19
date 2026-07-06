@@ -65,10 +65,10 @@ export default function OurStore() {
             <a
               key={store.id}
               href={store.link}
-              className="flex items-center gap-4 bg-white rounded-2xl p-4 hover:bg-gray-100 transition-colors group"
+              className="flex items-center gap-6 bg-white rounded-2xl p-6 hover:bg-gray-100 transition-colors group"
             >
               {/* Thumbnail */}
-              <div className="w-32 h-20 rounded-xl overflow-hidden flex-shrink-0">
+              <div className="w-45 h-30 rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src={store.image}
                   alt={store.name}

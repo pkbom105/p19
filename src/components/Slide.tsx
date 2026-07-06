@@ -57,7 +57,7 @@ export default function Slide() {
             className="text-white drop-shadow-lg"
             style={{
               fontSize: "220px",
-              fontFamily: "League Spartan, sans-serif",
+              fontFamily: "var(--font-sans)",
               fontWeight: 900,
             }}
           >

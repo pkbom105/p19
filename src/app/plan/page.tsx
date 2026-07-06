@@ -8,7 +8,7 @@ export default function AboutUsPage() {
       {/* Section 1 - Shop Layout */}
       <section className="w-full bg-white py-18 px-4 mt-30 ">
         <div className="max-w-6xl mx-auto ">
-          <h2 className="text-4xl font-black text-gray-800 text-left mb-8">SHOP LAYOUT</h2>
+          <h2 className="text-4xl font-black text-gray-800 text-left mb-8" style={{ fontFamily: "var(--font-sans)" }}>SHOP LAYOUT</h2>
           <div className="relative w-full aspect-[3/1] overflow-hidden rounded-xl">
             <Image
               src="/image/layout1-p19.png"
@@ -23,7 +23,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Section 3 - Our Store */}
-      <OurStore />
+      <OurStore /> 
       
     </div>
   );
