@@ -70,7 +70,7 @@ export default function AboutUsPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fa-brands fa-line" style={{ fontSize: "60px", color: "#1dc462" }}></i>
+                    <i className="fa-brands fa-line" style={{ fontSize: "60px", color: "#06C755" }}></i>
                   </a>
                   <span className="font-bold">LINE ID:</span>{" "}
                   <a
