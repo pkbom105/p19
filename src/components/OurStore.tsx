@@ -19,7 +19,7 @@ const stores = [
     id: 3,
     name: "Beyond",
     subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
-    time: "09:00 - 20:00 น.",
+    time: "09:30 - 19:30 น.",
     image: "/store/beyond/b1.jpg",
     link: "/store/beyond",
   },

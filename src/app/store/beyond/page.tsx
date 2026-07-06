@@ -6,8 +6,8 @@ const storeData = {
   subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
   description:
     "ศูนย์ทำสี ยืด ดัด ครบวงจร มีบริการตัดผมชาย-หญิง พร้อมทีมช่างมืออาชีพ ดูแลเส้นผมให้สวยสุขภาพดี",
-  time: "09:00 - 20:00 น.",
-  hours: "Everyday  09:00 - 20:00",
+  time: "09:30 - 19:30 น.",
+  hours: "Everyday  09:30 - 19:30",
   phone: "081-8855809",
   email: "beyondsalonbeauty@gmail.com",
   lineId: "@beyondsalon",

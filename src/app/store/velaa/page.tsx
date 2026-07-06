@@ -7,7 +7,7 @@ const storeData = {
   description:
     "VELAA เกิดจากความตั้งใจ อยากให้มื้อเช้าไม่ใช่แค่ \"อิ่ม\" แต่ \"มีความหมาย\" ขนมปังซาวร์โดว์อบใหม่ทุกวัน เพื่อสุขภาพเราใส่ใจทุกจาน เพื่อให้ทุกครั้งที่คุณมาที่นี่ เป็นช่วงเวลาแห่งการพักใจ VELAA—the time we taste",
   time: "07:00 - 20:00 น.",
-  hours: "Monday - Saturday  07:00 - 20:00\nSunday  08:00 - 20.00",
+  hours: "Everyday  07:00 - 20:00",
   phone: "082-5649924",
   email: "velaarama2@gmail.com",
   lineId: "@velaa",
