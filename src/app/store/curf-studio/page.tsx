@@ -7,6 +7,13 @@ const storeData = {
   description:
     "สตูดิโอพิลาทิสส่วนตัว บรรยากาศอบอุ่น ดูแลทุกการเคลื่อนไหว มีครูพิลาทิสที่ได้รับใบเซอร์และประสบการณ์มากมาย พร้อมอุปกรณ์คุณภาพจากแบรนด์ Elina เปิดให้บริการ 3 สาขา",
   time: "7:00 - 21:00 น.",
+  bookingNotice: "Appointment By Booking Only - จองล่วงหน้าเท่านั้น",
+  phone: "080-0692799",
+  email: "",
+  lineId: "@curfstudio",
+  instagram: "curfstudio.pilates",
+  facebookUrl: "",
+  facebookName: "",
   heroImage: "/store/curf/c2.jpg",
   section2: {
     type: "service" as const,
@@ -14,9 +21,11 @@ const storeData = {
       { name: "✨ สาขาราชพฤกษ์", description: "Private Class 1,100 บาท, Duo Class 1,900 บาท", price: "" },
       { name: "✨ สาขาบางแค", description: "ทดลอง Private Class 1,100 บาท/ครั้ง", price: "" },
       { name: "✨ สาขาพระราม 2", description: "ทดลอง Private Class 950 บาท/ครั้ง", price: "" },
-      { name: "📞 โทรศัพท์", description: "080-0692799", price: "" },
-      { name: "Instagram", description: "@curfstudio.pilates", price: "" },
-      { name: "Line", description: "@curfstudio", price: "" },
+    ],
+    images: [
+      "/store/curf/c1.jpg",
+      "/store/curf/c3.jpg",
+      "/store/curf/c4.jpg",
     ],
   },
   galleryImages: [

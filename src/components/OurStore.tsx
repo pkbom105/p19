@@ -3,8 +3,8 @@ const stores = [
     id: 1,
     name: "Cafe Amazon",
     subtitle: "ร้านกาแฟสัญชาติไทย ครบรส",
-    time: "06:00 - 22:00 น.",
-    image: "/store/logo-tenant-B1-Cafe%20Amazon.jpg",
+    time: "06:00 - 19:00 น.",
+    image: "/store/amazon/a4.jpg",
     link: "/store/cafeamazon-p19",
   },
   {
@@ -12,23 +12,23 @@ const stores = [
     name: "Li Hua",
     subtitle: "ข้าวหมูแดง บะหมี่หมูแดง สไตล์ฮ่องกง",
     time: "11:00 - 22:00 น.",
-    image: "/store/logo-tenant-B2-Lihua.jpg",
+    image: "/store/lihua/l1.jpg",
     link: "/store/lihua",
   },
   {
     id: 3,
     name: "Beyond",
     subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
-    time: "เปิดทุกวัน",
-    image: "/store/logo-tenant-A1-Beyond.jpg",
+    time: "09:00 - 20:00 น.",
+    image: "/store/beyond/b1.jpg",
     link: "/store/beyond",
   },
   {
     id: 4,
     name: "Velaa",
     subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
-    time: "7:00 - 20:00 น.",
-    image: "/store/logo-tenant-A3-Velaa.jpg",
+    time: "07:00 - 20:00 น.",
+    image: "/store/velaa/v1.jpg",
     link: "/store/velaa",
   },
   {
@@ -36,7 +36,7 @@ const stores = [
     name: "Chaanin",
     subtitle: "CHAA-NIN Massage | นวดเพื่อสุขภาพ",
     time: "10:00 - 20:00 น.",
-    image: "/store/logo-tenant-A4-Chanin.jpg",
+    image: "/store/chaanin/ch2.jpg",
     link: "/store/chaanin",
   },
   {
@@ -44,7 +44,7 @@ const stores = [
     name: "Curf Studio",
     subtitle: "Private Pilates | Your Beloved Cosy Wellness Studio",
     time: "7:00 - 21:00 น.",
-    image: "/store/logo-tenant-A5-Curf%20Studio.jpg",
+    image: "/store/curf/c2.jpg",
     link: "/store/curf-studio",
   },
 ];
@@ -67,8 +67,8 @@ export default function OurStore() {
               href={store.link}
               className="flex items-center gap-4 bg-white rounded-2xl p-4 hover:bg-gray-100 transition-colors group"
             >
-              {/* Picture */}
-              <div className="w-28 h-14 rounded-xl overflow-hidden flex-shrink-0">
+              {/* Thumbnail */}
+              <div className="w-32 h-20 rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src={store.image}
                   alt={store.name}

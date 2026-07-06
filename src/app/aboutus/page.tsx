@@ -43,6 +43,10 @@ export default function AboutUsPage() {
                 <span className="font-bold">ที่ตั้ง:</span>{" "}
                 351/1 ถนนพุทธบูชา แขวงบางมด เขตจอมทอง กรุงเทพมหานคร 10150
               </p>
+              <p>
+                <span className="font-bold">อีเมล:</span>{" "}
+                info.p19avenue@gmail.com
+              </p>
             </div>
           </div>
         </div>

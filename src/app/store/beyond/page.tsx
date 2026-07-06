@@ -6,17 +6,25 @@ const storeData = {
   subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
   description:
     "ศูนย์ทำสี ยืด ดัด ครบวงจร มีบริการตัดผมชาย-หญิง พร้อมทีมช่างมืออาชีพ ดูแลเส้นผมให้สวยสุขภาพดี",
-  time: "เปิดทุกวัน",
+  time: "09:00 - 20:00 น.",
+  hours: "Everyday  09:00 - 20:00",
+  phone: "081-8855809",
+  email: "beyondsalonbeauty@gmail.com",
+  lineId: "@beyondsalon",
+  instagram: "beyondsalonbeauty",
+  facebookUrl: "https://www.facebook.com/beyondsalonbeauty",
+  facebookName: "Beyond Salon Beauty",
   heroImage: "/store/beyond/b1.jpg",
   section2: {
-    type: "service" as const,
+    type: "menu" as const,
     items: [
       { name: "📍 สาขา 1", description: "ปากซอยบางบอน 5 ซอย 5", price: "โทร 081-8855809" },
       { name: "📍 สาขา 2", description: "ปากซอยพุทธบูชา 19", price: "โทร 092-4180675" },
       { name: "📍 สาขา 3", description: "The Fourth สาย 4", price: "โทร 065-2252340" },
-      { name: "Instagram", description: "@beyondsalonbeauty", price: "" },
-      { name: "Facebook", description: "Beyond Salon Beauty", price: "" },
-      { name: "Line", description: "@beyondsalon คลิ๊กที่ lin.ee/ySgGDdP", price: "" },
+    ],
+    images: [
+      "/store/beyond/t1.png",
+      "/store/beyond/t2.png",
     ],
   },
   galleryImages: [

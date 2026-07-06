@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-black mt-auto">
+    <footer className="w-full bg-white text-black mt-auto" style={{ borderTop: "4px solid #ebeae2" }}>
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
           {/* Logo & Description */}
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-300 mt-8 pt-6 text-center text-gray-500 text-xs">
+        <div className="mt-8 pt-6 text-center text-gray-500 text-xs" style={{ borderTop: "1px solid #ebeae2" }}>
           <p>&copy; {new Date().getFullYear()} P19 Avenue. All rights reserved.</p>
         </div>
       </div>

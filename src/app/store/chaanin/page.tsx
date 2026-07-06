@@ -6,7 +6,14 @@ const storeData = {
   subtitle: "CHAA-NIN Massage | ชนินทร์ มาสสาจ",
   description:
     "ร้านนวดเพื่อสุขภาพ พุทธบูชา-พระราม 2 ให้บริการนวดแผนไทย นวดผ่อนคลาย ด้วยทีมนักนวดมืออาชีพ บรรยากาศเงียบสงบ เพื่อการพักผ่อนอย่างแท้จริง",
-  time: "10:00 - 20:00 น.",
+  time: "เปิดทุกวัน 10:00 - 20:00 น.",
+  hours: "Everyday  10.00 - 20.00",
+  phone: "063-6368626",
+  email: "chaanin.massage@gmail.com",
+  lineId: "@642ckhym",
+  instagram: "chaanin.massage",
+  facebookUrl: "https://www.facebook.com/p/CHAA-NIN-Massage-l-%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C-61585676842179/",
+  facebookName: "CHAA-NIN Massage | ชนินทร์",
   heroImage: "/store/chaanin/ch2.jpg",
   section2: {
     type: "service" as const,

@@ -18,8 +18,6 @@ export default function Navbar() {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
-    if (!isHome) return;
-
     let lastScrollY = 0;
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -33,7 +31,7 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
+  }, []);
 
   if (isHome) {
     return (

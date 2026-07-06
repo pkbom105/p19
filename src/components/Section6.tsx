@@ -75,31 +75,57 @@ export default function Section6() {
             {/* Column 1 */}
             <div>
               <h2
-                className="font-black mb-6"
-                style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
+                className="font-thin mb-6"
+                style={{ fontSize: "80px", color: "#687369", fontFamily: "var(--font-sans)", lineHeight: 0.8 }}
               >
-                GET IN TOUCH
-              </h2>
-              <div className="space-y-4 text-gray-700 text-lg">
-                <p>258 ถนนพุทธบูชา แขวงบางมด</p>
-                <p>เขตจอมทอง กรุงเทพฯ 10150</p>
-                <p className="mt-6">Tel: 02-428-2591</p>
-                <p>Email: info@p19avenue.com</p>
-              </div>
+                P19<br></br>
+                AVENUE<br></br>
+                PUTTHABUCHA
+              </h2>              
             </div>
 
             {/* Column 2 */}
             <div>
-              <h2
+              <h5
                 className="font-black mb-6"
-                style={{ fontSize: "60px", color: "#687369", fontFamily: "var(--font-sans)" }}
+                style={{ fontSize: "30px", color: "#687369", fontFamily: "var(--font-sans)" }}
               >
-                OPENING HOURS
-              </h2>
-              <div className="space-y-4 text-gray-700 text-lg">
-                <p>Monday - Friday: 08:00 - 22:00</p>
-                <p>Saturday - Sunday: 09:00 - 22:00</p>
-                <p className="mt-6 text-gray-400 italic">* Open daily including public holidays</p>
+                CONTACT
+              </h5>
+              <div className="space-y-6 text-gray-700 text-lg">
+                <div className="flex items-start gap-4">
+                  <svg
+                    className="w-6 h-6 mt-1 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#687369"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <p>
+                    351/1 ถนนพุทธบูชา แขวงบางมด เขตจอมทอง กรุงเทพ 10150
+                    
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <svg
+                    className="w-6 h-6 mt-1 shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#687369"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  <p>info.p19avenue@gmail.com</p>
+                </div>
               </div>
             </div>
           </div>
