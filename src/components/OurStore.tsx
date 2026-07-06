@@ -68,7 +68,7 @@ export default function OurStore() {
               className="flex items-center gap-6 bg-white rounded-2xl p-6 hover:bg-gray-100 transition-colors group"
             >
               {/* Thumbnail */}
-              <div className="w-45 h-30 rounded-xl overflow-hidden flex-shrink-0">
+              <div className="w-45 h-38 rounded-xl overflow-hidden flex-shrink-0">
                 <img
                   src={store.image}
                   alt={store.name}
