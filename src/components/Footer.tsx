@@ -66,6 +66,17 @@ export default function Footer() {
               <li>เขตจอมทอง กรุงเทพมหานคร 10150</li>
               <li className="mt-2">
                 <a
+                  href="https://maps.app.goo.gl/Yf98EhAWA79KUt9D6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 hover:text-black transition-colors"
+                >
+                  <i className="fa-solid fa-map-location-dot" style={{ fontSize: "16px", color: "#EA4335" }}></i>
+                  <span>Google Maps: P19 Avenue</span>
+                </a>
+              </li>
+              <li className="mt-2">
+                <a
                   href="https://www.facebook.com/p19avenue"
                   target="_blank"
                   rel="noopener noreferrer"

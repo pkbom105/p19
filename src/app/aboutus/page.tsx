@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import OurStore from "@/components/OurStore";
 
+export const metadata: Metadata = {
+  title: "เกี่ยวกับเรา",
+  description: "รู้จัก P19 Avenue — คอมมูนิตี้มอลล์บนถนนพุทธบูชา โดย บริษัท เบทเทอร์แลนด์ ดีเวลลอปเมนท์ จำกัด (BETTERLAND DEVELOPMENT CO., LTD.)",
+  openGraph: {
+    title: "เกี่ยวกับเรา | P19 Avenue",
+    description: "รู้จัก P19 Avenue — คอมมูนิตี้มอลล์บนถนนพุทธบูชา",
+  },
+};
+
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
+    <main className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
       {/* Section 1 */}
       <section className="w-full py-24 px-4 mt-30">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-center">
@@ -44,6 +54,17 @@ export default function AboutUsPage() {
                 351/1 ถนนพุทธบูชา แขวงบางมด เขตจอมทอง กรุงเทพมหานคร 10150
               </p>
               <p>
+                <a
+                  href="https://maps.app.goo.gl/Yf98EhAWA79KUt9D6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  <i className="fa-solid fa-map-location-dot"></i>
+                  <span>ดูบน Google Maps: P19 Avenue</span>
+                </a>
+              </p>
+              <p>
                 <span className="font-bold">อีเมล:</span>{" "}
                 info.p19avenue@gmail.com
               </p>
@@ -70,6 +91,6 @@ export default function AboutUsPage() {
         </div>
       </section>  
      
-    </div>
+    </main>
   );
 }

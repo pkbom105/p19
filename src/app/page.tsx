@@ -9,7 +9,7 @@ import Section6 from "@/components/Section6";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Slide />
       <Section1 />
       <Section2 />
@@ -18,6 +18,6 @@ export default function Home() {
       <Section5 />
       <OurStore />
       <Section6 />
-    </>
+    </main>
   );
 }

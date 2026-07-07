@@ -74,14 +74,14 @@ export default function Navbar() {
           visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         } ${isHome ? "" : "bg-white"}`}
       >
-        <div className={`max-w-7xl mx-auto flex items-center justify-between ${isHome ? "mt-6 md:mt-10 px-6" : "px-4 py-4"}`}>
+        <div className={`max-w-6xl mx-auto flex items-center justify-between ${isHome ? "mt-6 md:mt-10 px-6" : "px-4 py-4"}`}>
           <Link href="/">
             <Image
-              src={isHome ? "/image/p19-logo-02w.png" : "/image/logo2-p19.png"}
+              src={isHome ? "/image/p19-1w.png" : "/image/p19-1.png"}
               alt="P19 Logo"
-              width={160}
-              height={56}
-              style={{ height: 56, width: "auto" }}
+              width={200}
+              height={100}
+              style={{ height: 150, width: "auto" }}
               priority={isHome}
             />
           </Link>

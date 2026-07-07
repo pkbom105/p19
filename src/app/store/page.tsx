@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "ร้านค้าทั้งหมด",
+  description: "รวมร้านค้าและบริการทั้งหมดใน P19 Avenue — Cafe Amazon, Li Hua, Beyond, Velaa, Chaanin, Curf Studio และร้านค้าอื่นๆ อีกมากมาย",
+  openGraph: {
+    title: "ร้านค้าทั้งหมด | P19 Avenue",
+    description: "รวมร้านค้าและบริการทั้งหมดใน P19 Avenue — คอมมูนิตี้มอลล์บนถนนพุทธบูชา",
+  },
+};
 
 const stores = [
   {
@@ -53,7 +63,7 @@ const stores = [
 
 export default function StoreDirectory() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
+    <main className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
       <section className="w-full py-16 px-4 mt-30">
         <div className="max-w-6xl mx-auto">
           <h1
@@ -109,6 +119,6 @@ export default function StoreDirectory() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

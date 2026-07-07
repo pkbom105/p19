@@ -17,6 +17,7 @@ interface StoreItem {
   instagram?: string;
   facebookUrl?: string;
   facebookName?: string;
+  menuUrl?: string;
   heroImage: string;
   section2: {
     type: "menu" | "service" | "promotion";
@@ -32,7 +33,7 @@ interface StoreTemplateProps {
 
 export default function StoreTemplate({ store }: StoreTemplateProps) {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground">
       {/* Section 1: Hero with 2 columns */}
       <section className="w-full py-16 px-4 mt-20">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10 items-center">
@@ -179,6 +180,21 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
               </div>
             )}
 
+            {/* Menu Button */}
+            {store.menuUrl && (
+              <div className="pt-2">
+                <a
+                  href={store.menuUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#8B1A1A] hover:bg-[#6B1414] text-white font-bold py-3 px-6 rounded-xl transition-colors shadow-md"
+                >
+                  <i className="fa-solid fa-book"></i>
+                  ดูเมนู
+                </a>
+              </div>
+            )}
+
             {/* Instagram */}
             {store.instagram && (
               <div className="flex items-center gap-2 text-gray-500">
@@ -314,6 +330,6 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
 
       {/* Our Store section before footer */}
       <OurStore />
-    </div>
+    </main>
   );
 }

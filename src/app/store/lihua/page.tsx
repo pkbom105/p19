@@ -15,6 +15,7 @@ const storeData = {
   instagram: "",
   facebookUrl: "https://www.facebook.com/p/Li-Hua-%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%AE%E0%B8%B1%E0%B8%A7-%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%81%E0%B8%94%E0%B8%87-%E0%B8%9A%E0%B8%B0%E0%B8%AB%E0%B8%A1%E0%B8%B5%E0%B9%88%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%81%E0%B8%94%E0%B8%87-%E0%B8%AA%E0%B9%84%E0%B8%95%E0%B8%A5%E0%B9%8C%E0%B8%AE%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%87-P19-Avenue-61566526730255/",
   facebookName: "Li Hua ลี่ฮัว",
+  menuUrl: "/store/lihua/lihua-menu-june-26.pdf",
   heroImage: "/store/lihua/l1.jpg",
   section2: {
     type: "menu" as const,

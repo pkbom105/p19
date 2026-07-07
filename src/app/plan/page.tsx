@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import OurStore from "@/components/OurStore";
 
+export const metadata: Metadata = {
+  title: "ผังร้าน",
+  description: "ดูผังร้านค้าและพื้นที่เช่าทั้งหมดของ P19 Avenue — คอมมูนิตี้มอลล์บนถนนพุทธบูชา",
+  openGraph: {
+    title: "ผังร้าน | P19 Avenue",
+    description: "ดูผังร้านค้าและพื้นที่เช่าทั้งหมดของ P19 Avenue",
+  },
+};
+
 export default function AboutUsPage() {
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
+    <main className="min-h-screen" style={{ backgroundColor: "#ebeae2" }}>
      
       {/* Section 1 - Shop Layout */}
       <section className="w-full bg-white py-18 px-4 mt-30 ">
@@ -25,6 +35,6 @@ export default function AboutUsPage() {
       {/* Section 3 - Our Store */}
       <OurStore /> 
       
-    </div>
+    </main>
   );
 }
