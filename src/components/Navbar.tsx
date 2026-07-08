@@ -74,7 +74,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         } ${isHome ? "" : "bg-white"}`}
       >
@@ -89,7 +89,7 @@ export default function Navbar() {
               style={isHome ? undefined : { height: 120, width: "auto" }}
               priority={isHome}
             />
-            <span className={`font-['var(--font-poppins)'] ml-4 mt-16 leading-none ${isHome ? "text-white text-[0.75rem] md:text-[1.5rem]" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900 }}>
+            <span className={`font-['var(--font-poppins)'] ml-4 mt-13 leading-none ${isHome ? "text-white text-[0.75rem] md:text-[1.5rem]" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900 }}>
               Phutha<br />Bucha 19
             </span>
           </Link>
