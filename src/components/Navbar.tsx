@@ -85,10 +85,11 @@ export default function Navbar() {
               alt="P19 Logo"
               width={200}
               height={100}
-              style={{ height: 120, width: "auto" }}
+              className={isHome ? "h-[60px] md:h-[120px] w-auto" : ""}
+              style={isHome ? undefined : { height: 120, width: "auto" }}
               priority={isHome}
             />
-            <span className={`font-['var(--font-poppins)'] ml-4 mt-16 leading-none ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900, fontSize: "1.5rem" }}>
+            <span className={`font-['var(--font-poppins)'] ml-4 mt-16 leading-none ${isHome ? "text-white text-[0.75rem] md:text-[1.5rem]" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900 }}>
               Phutha<br />Bucha 19
             </span>
           </Link>
@@ -113,7 +114,7 @@ export default function Navbar() {
 
       {/* Mobile menu overlay */}
       <div
-        className={`md:hidden fixed inset-0 z-40 transition-all duration-300 ${
+        className={`md:hidden fixed inset-0 z-100 transition-all duration-300 ${
           mobileOpen ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
