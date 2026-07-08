@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { MapPin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -71,7 +72,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 hover:text-black transition-colors"
                 >
-                  <i className="fa-solid fa-map-location-dot" style={{ fontSize: "16px", color: "#EA4335" }}></i>
+                  <MapPin size={16} color="#EA4335" />
                   <span>Google Maps: P19 Avenue</span>
                 </a>
               </li>
@@ -82,7 +83,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 hover:text-black transition-colors"
                 >
-                  <i className="fa-brands fa-facebook-f" style={{ fontSize: "18px", color: "#1877F2" }}></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                   <span>Facebook: P19 Avenue</span>
                 </a>
               </li>
@@ -93,7 +94,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 hover:text-black transition-colors"
                 >
-                  <i className="fa-brands fa-line" style={{ fontSize: "20px", color: "#06C755" }}></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#06C755"><path d="M19.364 10.254c0-2.394-3.118-4.354-6.864-4.354-3.746 0-6.864 1.96-6.864 4.354 0 2.15 2.488 3.928 5.762 4.258.224.047.532.144.61.332.066.16.043.412.02.576l-.001.001c-.003.023-.005.046-.01.068-.065.396-.383 1.552-.434 1.654-.068.136-.256.35-.115.428s.988.177 1.78.208c1.11.043 1.942.28 2.24.46.262.158.266.438.255.608v.002c0 .011-.002.023-.004.034-.03.21-.298 1.736-.41 1.994-.112.258-.056.386.224.386.532 0 2.05-.932 2.865-1.666 1.344-1.212 2.114-2.602 2.114-4.066v.002c.022-1.113-.088-2.18-.088-2.18zm-8.144 2.876s-.002 0-.004 0H9.174a.27.27 0 0 1-.27-.27V9.755c0-.15.12-.27.27-.27h.136c.15 0 .27.12.27.27v2.602h1.174c.15 0 .27.12.27.27v.136c0 .148-.12.27-.27.27h.003-.137zm1.888-.88h-1.04v.75c0 .155-.124.28-.28.28h-.14c-.156 0-.28-.125-.28-.28v-2.86c0-.155.124-.28.28-.28h.14c.156 0 .28.125.28.28v.88h1.04v-.88c0-.155.124-.28.28-.28h.14c.156 0 .28.125.28.28v2.86c0 .155-.124.28-.28.28h-.14c-.156 0-.28-.125-.28-.28v-.75zm2.398-2.27h.136c.15 0 .27.12.27.27v2.104c0 .15-.12.27-.27.27h-.136c-.15 0-.27-.12-.27-.27V10.25c0-.15.12-.27.27-.27zm1.56 3.482c-.186 0-.338-.152-.338-.338v-2.42c0-.186.152-.338.338-.338.186 0 .338.152.338.338v2.42c0 .186-.152.338-.338.338z"/></svg>
                   <span>LINE OA : P19 Avenue @431fqlea </span>
                 </a>
               </li>

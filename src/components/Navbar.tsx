@@ -37,18 +37,22 @@ export default function Navbar() {
   useEffect(() => {
     let lastScrollY = 0;
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setVisible(false);
+      if (isHome) {
+        setVisible(window.scrollY < window.innerHeight);
       } else {
-        setVisible(true);
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 20) {
+          setVisible(false);
+        } else {
+          setVisible(true);
+        }
+        lastScrollY = currentScrollY;
       }
-      lastScrollY = currentScrollY;
     };
-
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome]);
 
   const closeMobile = useCallback(() => setMobileOpen(false), []);
 
@@ -84,7 +88,7 @@ export default function Navbar() {
               style={{ height: 120, width: "auto" }}
               priority={isHome}
             />
-            <span className={`font-['var(--font-poppins)'] ml-4 mt-15 leading-none ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900, fontSize: "1.5rem" }}>
+            <span className={`font-['var(--font-poppins)'] ml-4 mt-16 leading-none ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900, fontSize: "1.5rem" }}>
               Phutha<br />Bucha 19
             </span>
           </Link>
@@ -97,8 +101,8 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors z-[60] ${
-              isHome ? "text-white" : "text-black"
+            className={`md:hidden p-2 rounded-lg transition-colors ${
+              isHome ? "z-30 text-white" : "z-[60] text-black"
             }`}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
           >

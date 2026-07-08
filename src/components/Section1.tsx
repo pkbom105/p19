@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Section1() {
@@ -33,12 +34,13 @@ export default function Section1() {
           &ldquo;Fulfilling Every Moment of Your Day.&rdquo;
         </motion.h3>
         <div className="text-center">
-          <button
-            className="mt-8 px-8 py-3 rounded-full text-white font-semibold text-lg transition-colors"
+          <Link
+            href="/aboutus"
+            className="mt-8 px-8 py-3 rounded-full text-white font-semibold text-lg transition-colors inline-block hover:opacity-90"
             style={{ backgroundColor: "#687369" }}
           >
             สนใจสอบถาม
-          </button>
+          </Link>
         </div>
       </div>
     </section>
