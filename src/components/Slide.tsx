@@ -57,7 +57,7 @@ export default function Slide() {
           <motion.p
             className="text-white drop-shadow-lg"
             style={{
-              fontSize: "200px",
+              fontSize: "190px",
               fontFamily: "var(--font-sans)",
               fontWeight: 900,
             }}

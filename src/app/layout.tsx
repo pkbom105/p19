@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { League_Spartan, Noto_Sans_Thai } from "next/font/google";
+import { League_Spartan, Noto_Sans_Thai, Poppins } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { cn } from "@/lib/utils";
@@ -23,6 +23,12 @@ const notoSansThai = Noto_Sans_Thai({
 const buffalo = localFont({
   src: "./fonts/Buffalo.otf",
   variable: "--font-buffalo",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
+  variable: "--font-poppins",
 });
 
 const siteUrl = "https://p19avenue.com";
@@ -166,7 +172,7 @@ export default function RootLayout({
   return (
     <html
       lang="th"
-      className={cn("h-full", "antialiased", leagueSpartan.variable, notoSansThai.variable, buffalo.variable, "font-sans")}
+      className={cn("h-full", "antialiased", leagueSpartan.variable, notoSansThai.variable, buffalo.variable, poppins.variable, "font-sans")}
     >
       <head>
         <meta name="theme-color" content="#687369" />
