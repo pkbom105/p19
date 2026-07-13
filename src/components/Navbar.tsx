@@ -79,7 +79,7 @@ export default function Navbar() {
         } ${isHome ? "" : "bg-white"}`}
       >
         <div className={`max-w-6xl mx-auto flex items-center justify-between ${isHome ? "px-6 pt-6 md:pt-10" : "px-4 py-4"}`}>
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-end">
             <Image
               src={isHome ? "/image/p19-1w.png" : "/image/p19-1.png"}
               alt="P19 Logo"
@@ -89,7 +89,7 @@ export default function Navbar() {
               style={isHome ? undefined : { height: 120, width: "auto" }}
               priority={isHome}
             />
-            <span className={`font-['var(--font-poppins)'] ml-4 mt-13 leading-none ${isHome ? "text-white text-[0.75rem] md:text-[1.5rem]" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 900 }}>
+            <span className={`font-['var(--font-poppins)'] ml-4 self-end leading-none text-[0.75rem] md:text-[1.5rem] ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 300 }}>
               Phutha<br />Bucha 19
             </span>
           </Link>
