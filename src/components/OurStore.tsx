@@ -8,7 +8,7 @@ const stores = [
     name: "Cafe Amazon",
     subtitle: "ร้านกาแฟสัญชาติไทย ครบรส",
     time: "06:00 - 19:00 น.",
-    image: "/store/amazon/a4.jpg",
+    image: "/store-img/amazon/a4.jpg",
     link: "/store/cafeamazon-p19",
   },
   {
@@ -16,7 +16,7 @@ const stores = [
     name: "Li Hua",
     subtitle: "ข้าวหมูแดง บะหมี่หมูแดง สไตล์ฮ่องกง",
     time: "11:00 - 22:00 น.",
-    image: "/store/lihua/l1.jpg",
+    image: "/store-img/lihua/l1.jpg",
     link: "/store/lihua",
   },
   {
@@ -24,7 +24,7 @@ const stores = [
     name: "Beyond",
     subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
     time: "09:30 - 19:30 น.",
-    image: "/store/beyond/b1.jpg",
+    image: "/store-img/beyond/b1.jpg",
     link: "/store/beyond",
   },
   {
@@ -32,7 +32,7 @@ const stores = [
     name: "Velaa",
     subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
     time: "07:00 - 20:00 น.",
-    image: "/store/velaa/v1.jpg",
+    image: "/store-img/velaa/v1.jpg",
     link: "/store/velaa",
   },
   {
@@ -40,7 +40,7 @@ const stores = [
     name: "Chaanin",
     subtitle: "CHAA-NIN Massage | นวดเพื่อสุขภาพ",
     time: "10:00 - 20:00 น.",
-    image: "/store/chaanin/ch2.jpg",
+    image: "/store-img/chaanin/ch2.jpg",
     link: "/store/chaanin",
   },
   {
@@ -48,7 +48,7 @@ const stores = [
     name: "Curf Studio",
     subtitle: "Private Pilates | Your Beloved Cosy Wellness Studio",
     time: "7:00 - 21:00 น.",
-    image: "/store/curf/c2.jpg",
+    image: "/store-img/curf/c2.jpg",
     link: "/store/curf-studio",
   },
 ];

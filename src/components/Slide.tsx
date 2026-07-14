@@ -49,7 +49,7 @@ export default function Slide() {
         {/* Foreground p19-fg overlay */}
         <div
           className="absolute inset-0 z-20 bg-cover bg-center"
-          style={{ backgroundImage: "url(/slide/p19-fg2.png)" }}
+          style={{ backgroundImage: "url(/slide/p19-fg3.png)" }}
         />
 
         {/* Text overlay P19 Avenue - animate once on mount from bottom to top */}

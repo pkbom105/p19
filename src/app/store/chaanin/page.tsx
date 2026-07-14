@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/logo-tenant-A4-Chanin.jpg",
+  logo: "/store-img/logo-tenant-A4-Chanin.jpg",
   title: "Chaanin",
   subtitle: "CHAA-NIN Massage | ชนินทร์ มาสสาจ",
   description:
@@ -14,7 +14,7 @@ const storeData = {
   instagram: "chaanin.massage",
   facebookUrl: "https://www.facebook.com/p/CHAA-NIN-Massage-l-%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C-61585676842179/",
   facebookName: "CHAA-NIN Massage | ชนินทร์",
-  heroImage: "/store/chaanin/ch2.jpg",
+  heroImage: "/store-img/chaanin/ch2.jpg",
   section2: {
     type: "service" as const,
     items: [
@@ -27,10 +27,10 @@ const storeData = {
     ],
   },
   galleryImages: [
-    "/store/chaanin/ch1.jpg",
-    "/store/chaanin/ch2.jpg",
-    "/store/chaanin/ch3.jpg",
-    "/store/chaanin/ch4.jpg",
+    "/store-img/chaanin/ch1.jpg",
+    "/store-img/chaanin/ch2.jpg",
+    "/store-img/chaanin/ch3.jpg",
+    "/store-img/chaanin/ch4.jpg",
   ],
 };
 

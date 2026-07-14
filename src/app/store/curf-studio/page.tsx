@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/logo-tenant-A5-Curf%20Studio.jpg",
+  logo: "/store-img/logo-tenant-A5-Curf%20Studio.jpg",
   title: "Curf Studio",
   subtitle: "Your Beloved Cosy Wellness Studio | Private Pilates",
   description:
@@ -14,7 +14,7 @@ const storeData = {
   instagram: "curfstudio.pilates",
   facebookUrl: "",
   facebookName: "",
-  heroImage: "/store/curf/c2.jpg",
+  heroImage: "/store-img/curf/c2.jpg",
   section2: {
     type: "service" as const,
     items: [
@@ -23,16 +23,16 @@ const storeData = {
       { name: "✨ สาขาพระราม 2", description: "ทดลอง Private Class 950 บาท/ครั้ง", price: "" },
     ],
     images: [
-      "/store/curf/c1.jpg",
-      "/store/curf/c3.jpg",
-      "/store/curf/c4.jpg",
+      "/store-img/curf/c1.jpg",
+      "/store-img/curf/c3.jpg",
+      "/store-img/curf/c4.jpg",
     ],
   },
   galleryImages: [
-    "/store/curf/c1.jpg",
-    "/store/curf/c2.jpg",
-    "/store/curf/c3.jpg",
-    "/store/curf/c4.jpg",
+    "/store-img/curf/c1.jpg",
+    "/store-img/curf/c2.jpg",
+    "/store-img/curf/c3.jpg",
+    "/store-img/curf/c4.jpg",
   ],
 };
 

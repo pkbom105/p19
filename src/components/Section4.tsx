@@ -268,10 +268,10 @@ export default function Section4() {
 
         <div className="grid grid-cols-2 gap-3 md:gap-4">
           {[
-            { src: "/store/amazon/a1.jpg", alt: "Cafe Amazon", link: "/store/cafeamazon-p19" },
-            { src: "/store/lihua/l2.jpg", alt: "Li Hua", link: "/store/lihua" },
-            { src: "/store/beyond/b4.jpg", alt: "Beyond", link: "/store/beyond" },
-            { src: "/store/velaa/v1.jpg", alt: "Velaa", link: "/store/velaa" },
+            { src: "/store-img/amazon/a1.jpg", alt: "Cafe Amazon", link: "/store/cafeamazon-p19" },
+            { src: "/store-img/lihua/l2.jpg", alt: "Li Hua", link: "/store/lihua" },
+            { src: "/store-img/beyond/b4.jpg", alt: "Beyond", link: "/store/beyond" },
+            { src: "/store-img/velaa/v1.jpg", alt: "Velaa", link: "/store/velaa" },
           ].map((img, i) => (
             <motion.a
               key={img.alt}

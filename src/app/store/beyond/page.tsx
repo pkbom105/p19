@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/logo-tenant-A1-Beyond.jpg",
+  logo: "/store-img/logo-tenant-A1-Beyond.jpg",
   title: "Beyond",
   subtitle: "ร้านทำสี ยืด ดัด และตัดผมชาย-หญิง",
   description:
@@ -14,7 +14,7 @@ const storeData = {
   instagram: "beyondsalonbeauty",
   facebookUrl: "https://www.facebook.com/beyondsalonbeauty",
   facebookName: "Beyond Salon Beauty",
-  heroImage: "/store/beyond/b1.jpg",
+  heroImage: "/store-img/beyond/b1.jpg",
   section2: {
     type: "menu" as const,
     items: [
@@ -23,15 +23,15 @@ const storeData = {
       { name: "📍 สาขา 3", description: "The Fourth สาย 4", price: "โทร 065-2252340" },
     ],
     images: [
-      "/store/beyond/t1.png",
-      "/store/beyond/t2.png",
+      "/store-img/beyond/t1.png",
+      "/store-img/beyond/t2.png",
     ],
   },
   galleryImages: [
-    "/store/beyond/b1.jpg",
-    "/store/beyond/b2.jpg",
-    "/store/beyond/b3.jpg",
-    "/store/beyond/b4.jpg",
+    "/store-img/beyond/b1.jpg",
+    "/store-img/beyond/b2.jpg",
+    "/store-img/beyond/b3.jpg",
+    "/store-img/beyond/b4.jpg",
   ],
 };
 

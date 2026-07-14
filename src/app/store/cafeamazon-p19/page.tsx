@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/logo-tenant-B1-Cafe%20Amazon.jpg",
+  logo: "/store-img/logo-tenant-B1-Cafe%20Amazon.jpg",
   title: "Cafe Amazon",
   subtitle: "ร้านกาแฟสัญชาติไทย",
   description:
@@ -14,7 +14,7 @@ const storeData = {
   instagram: "",
   facebookUrl: "https://www.facebook.com/p/Cafe-Amazon-P19-Avenue-61553828324308/",
   facebookName: "Cafe Amazon - P19 Avenue",
-  heroImage: "/store/amazon/a4.jpg",
+  heroImage: "/store-img/amazon/a4.jpg",
   section2: {
     type: "menu" as const,
     items: [
@@ -23,16 +23,16 @@ const storeData = {
       { name: "มอคค่า", description: "กาแฟผสมช็อคโกแลต", price: "80 บาท" },
     ],
     images: [
-      "/store/amazon/q2.png",
-      "/store/amazon/q1.png",
-      "/store/amazon/q3.png",
+      "/store-img/amazon/q2.png",
+      "/store-img/amazon/q1.png",
+      "/store-img/amazon/q3.png",
     ],
   },
   galleryImages: [
-    "/store/amazon/a1.jpg",
-    "/store/amazon/a2.jpg",
-    "/store/amazon/a3.jpg",
-    "/store/amazon/a4.jpg",
+    "/store-img/amazon/a1.jpg",
+    "/store-img/amazon/a2.jpg",
+    "/store-img/amazon/a3.jpg",
+    "/store-img/amazon/a4.jpg",
   ],
 };
 

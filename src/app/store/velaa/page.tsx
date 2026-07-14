@@ -1,7 +1,7 @@
 import StoreTemplate from "@/components/StoreTemplate";
 
 const storeData = {
-  logo: "/store/logo-tenant-A3-Velaa.jpg",
+  logo: "/store-img/logo-tenant-A3-Velaa.jpg",
   title: "Velaa",
   subtitle: "ร้านอาหารเพื่อสุขภาพ & คาเฟ่",
   description:
@@ -14,7 +14,7 @@ const storeData = {
   instagram: "",
   facebookUrl: "https://www.facebook.com/people/Velaa/61587371002283/",
   facebookName: "Velaa",
-  heroImage: "/store/velaa/v1.jpg",
+  heroImage: "/store-img/velaa/v1.jpg",
   section2: {
     type: "menu" as const,
     items: [
@@ -23,16 +23,16 @@ const storeData = {
       { name: "🥤 เครื่องดื่ม", description: "สั่งซาวโดว์ อาหารและเครื่องดื่มได้", price: "" },
     ],
     images: [
-      "/store/velaa/s1.png",
-      "/store/velaa/s2.png",
-      "/store/velaa/s3.png",
+      "/store-img/velaa/s1.png",
+      "/store-img/velaa/s2.png",
+      "/store-img/velaa/s3.png",
     ],
   },
   galleryImages: [
-    "/store/velaa/v1.jpg",
-    "/store/velaa/v2.jpg",
-    "/store/velaa/v3.jpg",
-    "/store/velaa/v1.jpg",
+    "/store-img/velaa/v1.jpg",
+    "/store-img/velaa/v2.jpg",
+    "/store-img/velaa/v3.jpg",
+    "/store-img/velaa/v1.jpg",
   ],
 };
 
