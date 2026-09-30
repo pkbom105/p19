@@ -7,9 +7,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans), var(--font-thai), sans-serif;
+  --font-sans: var(--font-league-spartan), var(--font-noto-sans-thai), sans-serif;
+  --font-thai: var(--font-noto-sans-thai), sans-serif;
+  --font-heading: var(--font-buffalo), var(--font-league-spartan), sans-serif;
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-heading);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -118,6 +119,14 @@
 }
 
 @layer base {
+  body {
+    font-family: var(--font-noto-sans-thai), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-league-spartan), var(--font-buffalo), sans-serif;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }

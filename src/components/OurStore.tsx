@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const stores = [
@@ -103,10 +104,14 @@ export default function OurStore() {
             >
               {/* Thumbnail - full width on mobile */}
               <div className="w-full md:w-45 h-48 md:h-38 rounded-xl overflow-hidden flex-shrink-0">
-                <img
+                <Image
                   src={store.image}
                   alt={store.name}
+                  width={480}
+                  height={320}
+                  sizes="(max-width: 768px) 100vw, 45vw"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
               </div>
 

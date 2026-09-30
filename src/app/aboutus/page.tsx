@@ -79,10 +79,13 @@ export default function AboutUsPage() {
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <img
+                  <Image
                     src="https://qr-official.line.me/gs/M_431fqlea_GW.png?oat_content=qr"
                     alt="LINE Official QR"
+                    width={128}
+                    height={128}
                     className="w-32 h-32 object-contain hover:opacity-80 transition-opacity"
+                    loading="lazy"
                   />
                 </a>
               </div>

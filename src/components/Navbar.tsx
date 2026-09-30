@@ -89,14 +89,14 @@ export default function Navbar() {
               style={isHome ? undefined : { height: 120, width: "auto" }}
               priority={isHome}
             />
-            <span className={`font-['var(--font-poppins)'] ml-4 self-end leading-none text-[0.75rem] md:text-[1.5rem] ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 300 }}>
+            <span className={`font-['var(--font-poppins)'] ml-4 self-end leading-none text-[0.5rem] md:text-[1.2rem] ${isHome ? "text-white" : "text-black"}`} style={{ fontFamily: "var(--font-poppins), sans-serif", fontWeight: 300 }}>
               Phutha<br />Bucha 19
             </span>
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center mt-25 gap-10">
-            {navLinks(isHome ? "text-white hover:text-white/80" : "text-black hover:text-gray-600")}
+            {navLinks(isHome ? "text-white text-[1.0rem] hover:text-white/80" : "text-black hover:text-gray-600")}
           </div>
 
           {/* Mobile hamburger */}

@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Actual font usage in production
+
+- Buffalo: large display / hero headings
+- Poppins: navbar and UI labels
+- Noto Sans Thai: main Thai body text
+- League Spartan: wide display-style headings
+
+This aligns with the current production build and the font variables used by the P19 app.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

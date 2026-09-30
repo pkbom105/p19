@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -85,10 +86,14 @@ export default function StoreDirectory() {
               >
                 {/* Image */}
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img
+                  <Image
                     src={store.image}
                     alt={store.name}
+                    width={800}
+                    height={600}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                 </div>
 

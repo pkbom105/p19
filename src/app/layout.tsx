@@ -7,27 +7,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-const leagueSpartan = League_Spartan({
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  variable: "--font-sans",
-});
-
-const notoSansThai = Noto_Sans_Thai({
-  subsets: ["thai", "latin"],
-  weight: ["400", "700", "900"],
-  variable: "--font-thai",
-});
-
 const buffalo = localFont({
   src: "./fonts/Buffalo.otf",
   variable: "--font-buffalo",
 });
 
+const leagueSpartan = League_Spartan({
+  subsets: ["latin", "vietnamese"],
+  variable: "--font-league-spartan",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const notoSansThai = Noto_Sans_Thai({
+  subsets: ["thai", "latin"],
+  variable: "--font-noto-sans-thai",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  subsets: ["latin", "latin-ext", "devanagari"],
   variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const siteUrl = "https://p19avenue.com";
@@ -105,6 +105,13 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#687369",
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ShoppingCenter",
@@ -163,6 +170,19 @@ const localBusinessJsonLd = {
   },
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: `${siteUrl}/`,
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -171,11 +191,33 @@ export default function RootLayout({
   return (
     <html
       lang="th"
-      className={cn("h-full", "antialiased", leagueSpartan.variable, notoSansThai.variable, buffalo.variable, poppins.variable, "font-sans")}
+      className={cn(
+        "h-full",
+        "antialiased",
+        buffalo.variable,
+        leagueSpartan.variable,
+        notoSansThai.variable,
+        poppins.variable,
+        "font-sans",
+      )}
     >
       <head>
         <meta name="theme-color" content="#687369" />
         <link rel="apple-touch-icon" href="/favicon-p19.png" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2ZZPCR6012"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2ZZPCR6012');
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col">
         {/* JSON-LD Schema Markup */}
@@ -189,6 +231,12 @@ export default function RootLayout({
           id="schema-local-business"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="schema-breadcrumb"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
           strategy="beforeInteractive"
         />
         <Navbar />

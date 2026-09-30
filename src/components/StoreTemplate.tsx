@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import OurStore from "./OurStore";
 
 interface StoreItem {
@@ -40,10 +41,13 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
           {/* Left Column: Info */}
           <div className="space-y-4">
             {store.logo && (
-              <img
+              <Image
                 src={store.logo}
                 alt={`${store.title} logo`}
+                width={160}
+                height={160}
                 className="h-40 w-auto mb-2"
+                loading="lazy"
               />
             )}
             <h1
@@ -249,10 +253,14 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
           {/* Right Column: Hero Image */}
           <div className="relative">
             <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
-              <img
+              <Image
                 src={store.heroImage}
                 alt={store.title}
+                width={1200}
+                height={900}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full h-full object-cover"
+                priority
               />
             </div>
           </div>
@@ -277,10 +285,14 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
             <div className={`grid grid-cols-1 gap-6 ${store.section2.images!.length === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-3'}`}>
               {store.section2.images!.map((src, index) => (
                 <div key={index} className={`${store.section2.images!.length === 2 ? 'aspect-square' : 'aspect-[3/4]'} rounded-2xl overflow-hidden shadow-md`}>
-                  <img
+                  <Image
                     src={src}
                     alt={`${store.title} ${store.section2.type} ${index + 1}`}
+                    width={800}
+                    height={900}
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
                 </div>
               ))}
@@ -317,10 +329,14 @@ export default function StoreTemplate({ store }: StoreTemplateProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {store.galleryImages.map((src, index) => (
               <div key={index} className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md">
-                <img
+                <Image
                   src={src}
                   alt={`${store.title} gallery ${index + 1}`}
+                  width={800}
+                  height={600}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
             ))}
