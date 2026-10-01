@@ -96,7 +96,7 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center mt-25 gap-10">
-            {navLinks(isHome ? "text-white text-[1.0rem] hover:text-white/80" : "text-black hover:text-gray-600")}
+            {navLinks(isHome ? "text-white text-[1.0rem] hover:text-white/80" : "text-black text-[1.0rem] hover:text-gray-600")}
           </div>
 
           {/* Mobile hamburger */}
